@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <img class="header__logo" src="./image/icon/logo.png" alt="Logo">
@@ -40,8 +42,10 @@
         </div>
     </header>
 
+    <!-- Сплошная линия -->
     <div class="header__line"></div> 
 
+    <!-- Вкладки -->
     <main class="content">
         <nav class="breadclumb">
             <ul>
@@ -49,7 +53,32 @@
                 <li class="breadclumb__item"><span>Блог</span></li>
             </ul>
         </nav>
+
+        <!-- Заголовок -->
         <h1 class="content__header">Блог</h1>
+
+        <!-- Меню -->
+        <section class="section__icons">
+            <div class="chips">
+                <label class="chip" for="all"><span class="chip__icon"><img src="./image/icon/smile.png" alt="Смайл"></span>Все</label>
+
+                <label class="chip" for="all">Самооценка и самопринятие</label>
+
+                <label class="chip chipi" for="all"> <span class="chip__icon"><img src="./image/icon/Unicorn.png" alt="Смайл"></span>Self</label>
+
+                <label class="chip" for="all">Чувства и эмоции</label>
+
+                <label class="chip" for="all">Тревога</label>
+
+                <label class="chip" for="all">Упражнения</label>
+
+                <label class="chip" for="all">Психология питания</label>
+
+                <label class="chip" for="all">Насилие</label>
+
+                <label class="chip" for="all">Личное здоровье</label>
+            </div>
+        </section>
     </main>
 </body>
 </html>
