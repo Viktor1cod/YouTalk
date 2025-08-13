@@ -205,3 +205,78 @@ img {
 .chipi {
     border:3px solid #03B2A5;
 }
+
+/* grid сущности */
+
+.cards {
+  box-sizing: border-box;
+  max-width: 1440px;          
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grd__two{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));   /* создание колонок */
+  gap: 24px;
+  width: 100%;
+  margin: 25px;
+}
+
+.grd__six{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));  /* создание колонок */
+  gap:24px;
+  width:100%;
+  margin: 25px;
+}
+
+.card{
+  background:#fff;
+  overflow:hidden;  /* обрезает всё, что вылезает за границы блока */
+  border: 1px solid #DEDEDE;
+  border-radius: 15px;
+  
+  display:grid;
+  grid-template-rows:auto auto auto 1fr auto;
+  gap:6px;
+}
+
+.card__content {
+  display: grid;
+  padding: 10px 15px;
+}
+
+.cards img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 20px; 
+  font-weight: 700;
+  color: #333;
+}
+
+.excerpt__after {
+  font-size: 14px; 
+  font-weight: 400;
+  color: #494949;
+
+  padding-top: 4px;
+}
+
+.excerpt__text {
+  font-size: 16px; 
+  font-weight: 400;
+  color: #494949;
+
+  padding-top: 2px;
+}
+
+.card__date {
+  font-size: 14px; 
+  font-weight: 400;
+  color: #868686;
+
+  margin-top: 25px;
+}
