@@ -346,6 +346,133 @@ img {
     font-weight: 700;
 
     margin-top: 50px;
+    margin-bottom: 100px;
   
     border: none;
 }
+
+
+/* footer */
+
+.footer {
+  padding: 35px 0 0 50px;
+}
+
+.footer .footer__top {
+  display:grid;
+  grid-template-columns: 420px 1fr 220px; /* столбцы, середина — подписка */
+  align-items:start;
+}
+
+.footer .container  {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2963A3;
+  max-width: 1440px;
+  color: #fff;  
+
+}
+
+.footer__top a {
+  color: #fff;
+}
+
+.footer__nav {
+  display:grid;
+  grid-template-columns: repeat(2, minmax(160px,1fr));
+  gap:40px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.footer__list-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.subscribe__form input {
+   border:0;   
+}
+
+.subscribe__form{
+  display:flex; 
+  position: relative; 
+  background:#fff; 
+  max-width:420px;
+  border-radius: 15px;
+}
+
+.subscribe__input{
+  flex:1;
+  border:0;
+  padding:12px 14px;
+  font-size:16px;
+  outline:none;
+  color:#1f2937;
+}
+
+.sub__btn{
+  height: 50px;
+  border: 0;
+  border-radius:10px;    /* скругление всего блока */
+  overflow:hidden;   
+  color:#fff;
+  justify-content: end;   /* прижать к правому краю */
+  display: flex;
+  padding: 0;
+}
+
+.paragraph{
+  margin:10px 0 0;
+  max-width:520px;
+  font-size:13px;
+}
+
+
+.footer__images{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;    /* по левому краю */
+  justify-content: flex-start;  /* прижать к верху */
+}
+
+.footer__title {
+  display: flex;
+  align-items: center;
+}
+
+
+/* низ футера */
+.footer__bottom{
+  border-top:1px solid rgba(255,255,255,.25);  /* тонкая линия сверху */
+  width: 1200px;
+  max-height: 100px;
+  margin: 50px;
+  margin-right: -35px;
+}
+
+
+.footer__row{
+  display:flex;
+  align-items:center;
+  gap:28px;                 /* расстояния между пунктами */
+  flex-wrap:wrap;           /* чтобы переносилось на узких экранах */
+  padding:12px 0 18px;
+  color:#FFFFFF;
+  opacity: 70%;
+}
+
