@@ -187,7 +187,8 @@ img {
 
 .chip{
   display:inline-flex;            /* ставим иконку и текст в одну линию */
-  align-items:center;             /* вертикальное выравнивание */
+  align-items:center;   
+  flex-wrap: nowrap;          
   gap: 4px;                       /* расстояние между иконкой и текстом */
   padding:8px 14px;               /* «внутренности» пилюли */
   border:1px solid #e5e7eb;
@@ -446,8 +447,6 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  align-items: flex-start;    /* по левому краю */
-  justify-content: flex-start;  /* прижать к верху */
 }
 
 .footer__title {
@@ -476,3 +475,44 @@ h3 {
   opacity: 70%;
 }
 
+/* Адаптация сайта */
+
+@media (max-width: 1024px) {
+ .header {
+  display: flex;
+  justify-content: space-between; /* логотип слева, кнопка справа */
+  align-items: center;            /* ← выравнивание по вертикали */
+  padding: 0 20px;
+}
+
+.header__nav {
+  width: 627px;
+  padding-left: 40px;
+  gap: 20px;
+}
+
+.header__nav a {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.header__list {
+  margin-right: 0;
+}
+
+.header__line {
+  margin-top: 20px;
+}
+
+.btn__header {
+  margin-right: -250px;
+}
+
+.chips {
+    flex-wrap: wrap;
+  }
+
+.footer__images {
+  margin-left: 30px;
+  }
+}
